@@ -32,7 +32,7 @@ body {
 
 p {
   margin-top: .5em;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
 }
 
 .wrapper {
@@ -45,6 +45,8 @@ img {
   max-width: 100%;
   border-radius: 3%;
 }
+
+
 
 
 /* Header & Nav */
@@ -72,6 +74,24 @@ nav ul li a:visited {
 }
 
 
+
+/* Headers */
+
+h1 {
+  font-size: var( --font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-lg)
+}
+
+h3 {
+  font-size: var(--font-size-md)
+}
+
+
+
+
 /* Grid #1 */
 
 .items {
@@ -95,10 +115,47 @@ nav ul li a:visited {
 }
 
 
+
+
 /* Featured Item Text */
 #featured {
-  
+  padding: .5em;
 }
+
+#featured,
+.subheader {
+  font-size: var(--font-size-md)
+}
+
+.button-1 {
+  background-color: black;
+  color: white;
+  width: 8em;
+  font-size: var(--font-size-base);
+  text-align: center;
+  padding: .5em;
+  border-radius: .4em;
+}
+
+
+/* Behind the Dough */
+
+#dough {
+  padding: 1em;
+}
+
+
+
+
+/* Opinions/Reviews */
+
+#opinions {
+  padding: 1em;
+  background-color: black;
+  color: white;
+}
+
+
 
 
 /* Grid #2 */
