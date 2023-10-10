@@ -123,16 +123,27 @@ h4 {
 
 
 /* Featured Item Text */
-#featured {
-  padding-bottom: 2em;
+#featured > div {
+  padding-bottom: 1em;
   border-bottom: 3px solid #f9f9f9;
-  
+  padding: 1em;
 }
 
-#featured,
-.h2 {
+div {
+  padding-bottom: 1em;
+}
+
+#featured h2 {
   font-weight: 300;
   margin-bottom: 0;
+}
+
+#featured h4 {
+  margin-top: 0em;
+}
+
+#featured p {
+  margin-top: 0em;
 }
 
 #featured,
@@ -153,11 +164,13 @@ h4 {
 
 /* Behind the Dough */
 
-#dough {
-  padding-top: .5em;
+#dough div {
   padding-bottom: 2em;
-  display: flex;
+  padding: 1em;
+
 }
+
+
 
 
 /* Opinions/Reviews */
@@ -195,7 +208,8 @@ h4 {
 
 .dough-flavors h3 {
   font-weight: 200;
-  
+    text-size-adjust: var(--font-size-md);
+
 }
 
 .dough-flavours p {
@@ -208,7 +222,7 @@ h4 {
 
 footer {
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
   text-align: center;
 }
 
@@ -235,13 +249,26 @@ footer {
     grid-column: 1 / 2;
   }
 
+  #featured {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   #intro div {
     display: flex;
   }
   
   #opinions div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em;
+  }
+
+  #dough > div {
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+    padding-bottom: 3em;
   }
 
   .dough-flavours {
@@ -279,19 +306,13 @@ footer {
     object-fit: cover;
   }
 
-  .contain {
+  #featured div {
     display: flex;
   }
 
-  #featured {
+  #dough > div {
     display: flex;
-  }
-
-  #dough {
-    display: flex;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    gap: 2em; 
   }
 
   
@@ -301,5 +322,13 @@ footer {
 /* Full Width Widescreen */
 
 @media (min-width: 80em) {
+
+  .wrapper {
+    max-width: 80em;
+    margin: 0 auto;
+    padding-left: 20em;
+    padding-right: 20em
+  }
+
 
 }
